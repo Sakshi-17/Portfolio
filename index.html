@@ -1,0 +1,125 @@
+<html>
+<head>
+    <title>Sakshi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="callout">
+        <p>Email id: sakshiporwal72@gmail.com</p></div>
+        
+        <div class="background">
+        
+        
+    <div class="nav">
+        <a class="a" active href="#">Home</a>
+        <a class="b" href="#">About Me</a>
+         <a class="c" href="#">Academics</a>
+         <a class="d" href="#">Contact Me</a>
+        </div> 
+    <div class="content">
+        <div class="home">
+        <img src="image/Photo.jpg">
+            <h2>Sakshi Porwal</h2>
+            <h3>Web Developer</h3>
+            <h5>Freelancing coding with a free mind</h5>
+        </div>
+        <div class="AboutMe">
+            <p>
+                Hi!<br><br> I am <b>SAKSHI PORWAL</b> <br> I am a Web Developer born on 17/08/2002 and currently living in DELHI.<br><br>I want to work for a digital creative agency. Sometimes I create websites, posters and other stuff for good people. At first I intended to do something else with life. One thing led to another and now I am a full-fledged Web Developer.<br>I have worked on Operating Systems like Windows, Unix. Alsi I am comfortable working with Programming Languages like C++ and Java and Web Technologies namely, HTML and Javascript<br><br>Internet surfing, reading novels, learning new computer applications, web series and dancing interst me.<br>
+            </p>
+          <div class="one-third">
+          <img src="image/gm.png">
+            </div>
+        <div class="one-third">
+        <img src="image/wa.png">
+        </div>
+         <div class="one-third">
+        <img src="image/insta.png">
+        </div>
+        </div>
+        
+        <div class="Academics">
+            <table>
+                <tr>
+        <td colspan = 4 style="background-color: goldenrod"><h3> INSTITUTE</h3></td>
+        <td colspan = 4 style="background-color: goldenrod"><h3> STUDY</h3></td>
+        <td colspan = 4 style="background-color: goldenrod"><h3>MARKS</h3></td>
+    </tr>
+            <tr>
+        <td colspan = 4 style="background-color: burlywood"><p>SGTB Khalsa College<br></p>DU</td>
+        <td colspan = 4 style="background-color: burlywood"><p>Bsc.(hons) Computer Science</p></td>
+        <td colspan = 4 style="background-color: burlywood"><p>CGPA: 8</p></td>
+    </tr>
+                <tr>
+        <td colspan = 4 style="background-color: burlywood"><p>The Air Force School<br>Delhi Cantt</p></td>
+        <td colspan = 4 style="background-color: burlywood"><p>HSC from CBSE</p></td>
+        <td colspan = 4 style="background-color: burlywood"><p>Percentage: 94.4</p></td>
+    </tr>
+                  <tr>
+        <td colspan = 4 style="background-color: burlywood"><p>The Air Force School<br>Delhi Cantt</p></td>
+        <td colspan = 4 style="background-color: burlywood"><p>SSC from CBSE </p></td>
+        <td colspan = 4 style="background-color: burlywood"><p>CGPA: 9.6</p></td>
+    </tr>
+            </table>
+            <br><br><br>
+            <div class="tal">
+     <table align = center border="0">
+         <th colspan = 10 style="background-color: lightcoral" ><B><align = right><h2> Certification Course in : Web Analytics</h2></align></B></th></table></div>       
+        </div>
+        <div class="ContactMe">
+        <form action="" method="post">
+            <input type="text" name="" class="inputText" value="First Name">
+            <input type="text" name="" class="inputText" value="Last Name">
+            <input  type="email" name="" class="inputText" value="Your Email">
+            <textarea cols="4" rows="6" class="inputMsg" >Type your message!!!</textarea>
+            <input type="submit" name="" class="SubmitButton" value="SUBMIT">
+            </form>
+        </div>
+        </div> 
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			  crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('a').click(function(){
+                var selected = $(this);
+               $('a').removeClass('.active');
+               $(selected).addClass('active');
+            });
+           var $a = $('.a'),
+             $b = $('.b'), 
+            $c = $('.c'), 
+             $d = $('.d'), 
+             $home = $('.home'), 
+          $AboutMe = $('.AboutMe'),
+        $Academics = $('.Academics') 
+        $ContactMe = $('.ContactMe'); 
+             $a.click(function(){
+             $home.fadeIn();
+             $AboutMe.fadeOut();
+             $Academics.fadeOut();
+             $ContactMe.fadeOut();
+            });
+             $b.click(function(){
+             $AboutMe.fadeIn();
+             $home.fadeOut();
+             $Academics.fadeOut();
+             $ContactMe.fadeOut();
+            });
+            $c.click(function(){
+                 $Academics.fadeIn();
+             $AboutMe.fadeOut();
+             $home.fadeOut();
+              $ContactMe.fadeOut();
+            });
+             $d.click(function(){
+                $ContactMe.fadeIn();
+                $Academics.fadeOut();
+                $AboutMe.fadeOut();
+                $home.fadeOut();
+            });
+        });
+        </script>
+    </body>
+</html>
